@@ -39,4 +39,6 @@ Note: `require` loads and evaluate the modules asynchronous.
 
 ## `resolve` 省略文件扩展名
 
+## `ExtractTextPlugin` 合并 `require` 到的样式
+
 @2015/11/27 by kevin

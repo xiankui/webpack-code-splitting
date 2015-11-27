@@ -7,17 +7,16 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
 	entry: {
 		app: './src/js/app.js',
-		vendor: ['jquery', 'underscore'],
-		common: ['./src/css/common.css'],
-		style: ['./src/css/a.css', './src/css/b.css']
+		vendor: ['jquery', 'underscore']
 	},
 	output: {
-		path: './assets',
+		path: './assets/',
+		publicPath: './assets/',
 		filename: 'bundle.js'
 	},
 	plugins: [
 		new CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
-		new ExtractTextPlugin('[name].css')
+		new ExtractTextPlugin('style.css', { allChunks: true })
 	],
 	module: {
 		loaders: [
