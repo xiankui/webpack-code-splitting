@@ -1,0 +1,27 @@
+{
+  "name": "webpack-code-splitting",
+  "version": "1.0.0",
+  "description": "code splitting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code",
+    "splitting"
+  ],
+  "author": "kevin",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3"
+  }
+}
